@@ -37,7 +37,7 @@ class Appform extends React.Component{
         const {universityregisterednumber,name,gender,email,emails,mobilenumber,dob,course,yearofcompletion,ugpercentage,
         ramanareddy,Diplomabranch,Diplomapercentage,pucpercentage,tenthpercentage,collegename,city,nativeplace,uname,file}=this.state;
 axios({
-    url:'http://localhost:2022/jobseekers',
+    url:'https://pure-ocean-78296.herokuapp.com/jobseekers',
     method:'POST',
     headers:{'content-Type':'application/json'},
     data:{
