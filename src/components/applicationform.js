@@ -1,6 +1,25 @@
 import React from 'react';
 import '../styles/appform.css'
-import axios from 'axios'
+import axios from 'axios';
+import {animations,easings} from 'react-animation';
+const mystyles={
+    animation:`slide-in ${easings.easeInOutSine} 2000ms forwards`,
+    color:'black'
+}
+
+const mystyle={
+    animation:`pop-in ${easings.easeInSine} 2000ms forwards`,
+    color:'blue',
+    display:'inline-block',
+    fontSize:'20px'
+}
+
+
+const style = {
+    animation: animations.slideIn,
+    color:'black'
+  }
+  
 class Appform extends React.Component{
     constructor()
     {
@@ -249,8 +268,8 @@ resume=()=>{
            <form className="text-center skr" style={{backgroundImage:'url(Images/seven.jpg)'}}  onSubmit={this.handlesubmit}>
                 <div>
                     <br/>
-                <div onClick={this.resume} className="btn-outline-secondary rounded" style={{display:'inline-block',fontSize:'20px'}}>Resume</div><br/>
-           <div className="mt-3 tkr" style={{textDecoration:'underline'}}>Application Form</div>
+                <div onClick={this.resume} className="btn-outline-secondary rounded" style={mystyle}>Resume</div><br/>
+           <div className="mt-3 tkr" style={mystyles}>Application Form</div>
           
            <br/>
            <div style={{color:'black',fontWeight:'bold',fontFamily:'serif'}} className="text-center">University Number</div>
@@ -280,7 +299,7 @@ resume=()=>{
         <span className="rmr">Ex:9000000000</span>
            <br/>
            <br/>
-           <div style={{color:'black'}}>D-O-B:</div>
+           <div style={style}>D-O-B:</div>
            <input type="date" name="dob" required className="rounded ukp" onChange={this.dob}/>
     <br/>
 
