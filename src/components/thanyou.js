@@ -9,7 +9,7 @@ class Thankyou extends React.Component{
 	<div className="container p-3 my-3 border bg-white">
         {/*eslint-disable-next-line*/}
 		<div className="text-center " style={{color: "darkslateblue",fontSize: "34px",marginBottom: "27px",marginTop:"36px",fontWeight:"300"}}><marquee direction="right">Thank You!</marquee></div>
-		<p style={{fontSize: "15px",paddingLeft: "48px"}}>Your Application has been submitted.</p>
+		<p style={{fontSize: "15px",paddingLeft: "48px"}}>Your response has been recorded.</p>
 	</div>
 	<div className="bg-dark text-white sarath container-fluid rounded" style={{marginTop: "28px"}}>
 	<p className="container" style={{fontSize: "12px",paddingTop: "25px"}}>©1997-2021 LogMeIn, Inc. All rights reserved.</p>
