@@ -249,7 +249,7 @@ resume=()=>{
            <form className="text-center skr" style={{backgroundImage:'url(Images/seven.jpg)'}}  onSubmit={this.handlesubmit}>
                 <div>
                     <br/>
-                <div onClick={this.resume} className="btn-outline-danger rounded" style={{display:'inline-block',fontSize:'20px'}}>Resume</div><br/>
+                <div onClick={this.resume} className="btn-outline-secondary rounded" style={{display:'inline-block',fontSize:'20px'}}>Resume</div><br/>
            <div className="mt-3 tkr" style={{textDecoration:'underline'}}>Application Form</div>
           
            <br/>
