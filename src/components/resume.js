@@ -16,7 +16,7 @@ class Resume extends React.Component{
         const {resume,name}=this.state;
     
         axios({
-            url:'http://localhost:2022/uploadresume',
+            url:'https://pure-ocean-78296.herokuapp.com/uploadresume',
             method:'POST',
             headers:{'content-Type':'application/json'},
             data:
